@@ -23,7 +23,7 @@ import {
   ForgotPasswordText,
   CreateAccountButton,
   CreateAccountButtonText,
-  FormTeste,
+  FormSignIn,
 } from './styles';
 
 const SignIn: React.FC = () => {
@@ -51,7 +51,7 @@ const SignIn: React.FC = () => {
               <Title>Faça seu logon</Title>
             </View>
 
-            <FormTeste ref={formRef} onSubmit={handleSignIn}>
+            <FormSignIn ref={formRef} onSubmit={handleSignIn}>
               <Input name="email" icon="mail" placeholder="E-mail" />
               <Input name="password" icon="lock" placeholder="Senha" />
 
@@ -62,7 +62,7 @@ const SignIn: React.FC = () => {
               >
                 Entrar
               </Button>
-            </FormTeste>
+            </FormSignIn>
             <ForgotPassword onPress={() => { console.log('Apertou Forgot'); }}>
               <ForgotPasswordText>Esqueci minha senha</ForgotPasswordText>
             </ForgotPassword>

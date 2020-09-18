@@ -49,6 +49,6 @@ export const CreateAccountButtonText = styled.Text`
   margin-left: 16px;
 `;
 
-export const FormTeste = styled(Form)`
+export const FormSignIn = styled(Form)`
   width: 100%;
 `;
